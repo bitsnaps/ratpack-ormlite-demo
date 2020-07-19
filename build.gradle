@@ -1,17 +1,10 @@
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath "io.ratpack:ratpack-gradle:1.0.0-rc-2"
-    classpath "com.github.jengelman.gradle.plugins:shadow:1.2.2"
-  }
+plugins {
+    id "io.ratpack.ratpack-groovy" version "1.2.0"
+    id "com.github.johnrengelman.shadow" version "1.2.3"
+    id "idea"
+    id "eclipse"
+    id 'org.asciidoctor.convert' version '1.5.3'
 }
-
-apply plugin: "io.ratpack.ratpack-groovy"
-apply plugin: "com.github.johnrengelman.shadow"
-apply plugin: "idea"
-apply plugin: "eclipse"
 
 repositories {
   jcenter()
